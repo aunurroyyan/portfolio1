@@ -7,7 +7,28 @@
 <body>
   <h1>Ini halaman tentang sekolah saya</h1>
   <p>Selamat datang!</p>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXb8BDRwfUXbVFm_tewerc_ShepW7OjY3ymQQih4eKCHv5Pg/viewform?embedded=true" width="640" height="1340" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+  <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXb8BDRwfUXbVFm_tewerc_ShepW7OjY3ymQQih4eKCHv5Pg/viewform?embedded=true" width="640" height="1340" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe> -->
   <a href="../" style="display:inline-block; margin-bottom:20px; text-decoration:none; color:white; background:#007bff; padding:10px 20px; border-radius:5px;">⬅️ Kembali ke Halaman Utama</a>
+
+  <div id="header"></div>
+
+  <!-- konten halaman di sini -->
+
+  <!-- <div id="footer"></div> -->
+
+  <script>
+    // Load header dan footer dari file eksternal
+    fetch('/portfolio1/komponen/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    // fetch('/portfolio1/komponen/footer.html')
+    //   .then(res => res.text())
+    //   .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
+
+
+
+
 </html>
